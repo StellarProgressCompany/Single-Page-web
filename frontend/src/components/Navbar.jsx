@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { NavLink, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../assets/LOGO/LOGO-STELLAR-PNG-BLANC.png';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +21,7 @@ function Navbar() {
             <div className="container mx-auto flex justify-between items-center px-6 py-4">
                 <div>
                     <NavLink to="/">
-                        <img src={logo} alt="Stellar Progress Logo" className="h-12 w-auto cursor-pointer" />
+
                     </NavLink>
                 </div>
                 <div className="hidden md:flex">

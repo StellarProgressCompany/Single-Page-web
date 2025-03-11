@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import AvisoLegal from './pages/AvisoLegal';
-import Privacidad from './pages/Privacidad';
-import CookiePopup from './pages/CookiePopup'; // ✅ Importación corregida
-import Cookies from './pages/Cookies';
-import Animation from "./components/Animation";
+import AvisoLegal from './pages/Legal/AvisoLegal.jsx';
+import Privacidad from './pages/Legal/Privacidad.jsx';
+import CookiePopup from './pages/Legal/CookiePopup.jsx'; // ✅ Importación corregida
+import Cookies from './pages/Legal/Cookies.jsx';
+
 
 function App() {
     return (
         <>
             {/* Pantalla de carga */}
-            <Animation />
+
 
             <Router>
                 <CookiePopup /> {/* ✅ Se muestra el popup en todas las páginas */}
